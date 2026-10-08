@@ -1,0 +1,1 @@
+document.write("Hello, this is Prakash Patel's first JavaScript project!");
