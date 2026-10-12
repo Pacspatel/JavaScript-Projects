@@ -1,0 +1,85 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My One-Page Website</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+
+    <!-- Link to the JavaScript file -->
+    <script src="JS/one_page_website.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website heading -->
+    <header>
+        <h1>My One-Page Website</h1>
+        <p>Welcome to my website and image gallery!</p>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <!-- Home section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my one-page website. Explore my images below.</p>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h2>About This Website</h2>
+        <p>
+            This website was created using HTML, CSS, and JavaScript.
+            Click an image in the gallery to see a larger version.
+        </p>
+    </section>
+
+    <!-- Image gallery section -->
+    <section id="gallery">
+        <h2>My Image Gallery</h2>
+        <p>Click any image to open the lightbox.</p>
+
+        <div class="row">
+
+            <div class="column">
+                <img src="Images/image1_small.png"
+                     data-large="Images/image1_large.png"
+                     alt="Gallery image 1"
+                     class="gallery-image">
+            </div>
+
+            <div class="column">
+                <img src="Images/Image2_small.png"
+                     data-large="Images/image2_large.png"
+                     alt="Gallery image 2"
+                     class="gallery-image">
+            </div>
+
+            <div class="column">
+                <img src="Images/image3_small.png"
+                     data-large="Images/image3_large.png"
+                     alt="Gallery image 3"
+                     class="gallery-image">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Website footer -->
+    <footer>
+        <p>My One-Page Website</p>
+    </footer>
+
+</body>
+</html>
+ 

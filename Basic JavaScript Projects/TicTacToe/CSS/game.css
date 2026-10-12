@@ -1,0 +1,82 @@
+ 
+/* Style the main page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* Style the game heading */
+h1 {
+    color: #333333;
+    margin-top: 30px;
+}
+
+/* Style the turn message */
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+/* Position the board and winning line */
+.board-container {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    margin: 25px auto;
+}
+
+/* Place the winning line over the board */
+#win-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Create three rows and three columns */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+/* Style each square */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid blue;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    /* Fit the X and O images inside each square */
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Change the square color when the mouse is over it */
+.square:hover {
+    background-color: #dddddd;
+}
+
+/* Style the Play Again button */
+#reset {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Change the button color when the mouse is over it */
+#reset:hover {
+    background-color: #555555;
+}
+ 

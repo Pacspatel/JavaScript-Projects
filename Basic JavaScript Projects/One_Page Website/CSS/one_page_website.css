@@ -1,0 +1,163 @@
+
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Website heading */
+header {
+    background-color: #263746;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+/* Main website sections */
+section {
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #263746;
+}
+
+/* Image gallery layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 33.333%;
+    padding: 8px;
+}
+
+/* Gallery thumbnail images */
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.gallery-image:hover {
+    opacity: 0.75;
+}
+
+/* Lightbox background */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+/* Enlarged image */
+.lightbox-content {
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Close button */
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Previous and next buttons */
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 35px;
+    padding: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+    color: #ffcc66;
+}
+
+/* Website footer */
+footer {
+    background-color: #263746;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Adjust the layout for smaller screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 50%;
+    }
+
+    .gallery-image {
+        height: 160px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+}

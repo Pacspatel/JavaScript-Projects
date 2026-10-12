@@ -1,0 +1,130 @@
+ 
+/* Set the page background and default font */
+body {
+    background-color: darkblue;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Style the main heading */
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Style the menu headings */
+h3 {
+    font-family: Arial, sans-serif;
+    color: snow;
+}
+
+/* Set the font and text color for all div elements */
+div {
+    color: lightyellow;
+    font-family: monospace;
+}
+
+/* Main pizza menu container */
+#menuBG {
+    width: 620px;
+    min-height: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Menu form containing the three columns */
+#frmMenu {
+    width: 600px;
+    min-height: 220px;
+    overflow: auto;
+}
+
+/* Pizza size column */
+.left {
+    width: 200px;
+    min-height: 220px;
+    float: left;
+}
+
+/* Vegetable column */
+.center {
+    width: 200px;
+    min-height: 220px;
+    float: left;
+}
+
+/* Meat column */
+.right {
+    width: 200px;
+    min-height: 220px;
+    float: left;
+}
+
+/* Place Order button */
+#btnOrder {
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 20px auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Receipt area */
+#cart {
+    clear: both;
+    width: 600px;
+    min-height: 200px;
+    margin: 20px auto;
+    padding-top: 10px;
+    overflow: auto;
+    border-top: 1px solid lightyellow;
+}
+
+/* Order details on the left */
+#showText {
+    width: 300px;
+    min-height: 180px;
+    float: left;
+}
+
+/* Total price on the right */
+#totalPrice {
+    width: 250px;
+    min-height: 180px;
+    float: right;
+    text-align: right;
+}
+
+/* Keep the menu usable on smaller screens */
+@media screen and (max-width: 650px) {
+    #menuBG {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #frmMenu {
+        width: 100%;
+    }
+
+    .left,
+    .center,
+    .right {
+        width: 33.333%;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    #cart {
+        width: 100%;
+    }
+
+    #showText,
+    #totalPrice {
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+}
+ 

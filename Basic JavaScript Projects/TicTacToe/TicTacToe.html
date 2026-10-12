@@ -1,0 +1,50 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe Game</title>
+
+    <!-- Connect the CSS and JavaScript files -->
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/tictactoe.js" defer></script>
+</head>
+<body>
+
+    <!-- Game heading -->
+    <h1>TIC TAC TOE GAME</h1>
+
+    <!-- Show whose turn it is -->
+    <p id="message">Player X, your turn!</p>
+
+    <!-- Game board and winning line -->
+    <div class="board-container">
+
+        <canvas id="win-lines" width="310" height="310"></canvas>
+
+        <div class="game-board">
+            <!-- Row 1 -->
+            <div id="0" class="square" onclick="placeXOrO('0')"></div>
+            <div id="1" class="square" onclick="placeXOrO('1')"></div>
+            <div id="2" class="square" onclick="placeXOrO('2')"></div>
+
+            <!-- Row 2 -->
+            <div id="3" class="square" onclick="placeXOrO('3')"></div>
+            <div id="4" class="square" onclick="placeXOrO('4')"></div>
+            <div id="5" class="square" onclick="placeXOrO('5')"></div>
+
+            <!-- Row 3 -->
+            <div id="6" class="square" onclick="placeXOrO('6')"></div>
+            <div id="7" class="square" onclick="placeXOrO('7')"></div>
+            <div id="8" class="square" onclick="placeXOrO('8')"></div>
+        </div>
+    </div>
+
+    <!-- Start a new game -->
+    <button id="reset" onclick="resetGame()">Play Again</button>
+
+</body>
+</html>
+ 
