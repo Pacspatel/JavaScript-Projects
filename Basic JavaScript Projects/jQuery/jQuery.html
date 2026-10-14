@@ -1,0 +1,44 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prakash's jQuery Project</title>
+
+    <!-- Link to the Google API jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Main container for my webpage -->
+    <div id="container">
+        <div id="inner">
+
+            <!-- Heading for my jQuery project -->
+            <h1>Welcome to Prakash's jQuery Project</h1>
+
+            <!-- Paragraphs used to demonstrate jQuery -->
+            <p id="para_1">My name is Prakash Patel.</p>
+            <p id="para_2">I am learning JavaScript and jQuery.</p>
+            <p id="para_3">Click this paragraph to hide the heading.</p>
+
+        </div>
+    </div>
+
+    <script>
+        // Wait until the HTML document is ready
+        $(document).ready(function () {
+
+            // Change the text color of the second paragraph to red
+            $("#para_2").css({"color": "red"});
+
+            // Hide the main heading when the third paragraph is clicked
+            $("#para_3").click(function () {
+                $("h1").hide();
+            });
+
+        });
+    </script>
+</body>
+</html>
+ 
